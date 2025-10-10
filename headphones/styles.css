@@ -1,0 +1,157 @@
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Body Styles === */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* === Container === */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* === Header === */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover/Active for Links */
+nav a:hover,
+nav a:active {
+  color: #FF6565;
+}
+
+/* === Hero Section === */
+.hero {
+  background: linear-gradient(to right, #ff7a7a, #ffc3a0);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover/Active for Buttons */
+button:hover,
+button:active {
+  opacity: 0.9;
+}
+
+/* === Content Sections === */
+.content {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content p {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+}
+
+/* === Footer === */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* === Responsive Design for ≤ 480px === */
+@media screen and (max-width: 480px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  button {
+    width: 80%;
+    padding: 12px 0;
+  }
+
+  .content h3 {
+    font-size: 22px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+}
